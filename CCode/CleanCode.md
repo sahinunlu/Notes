@@ -232,6 +232,84 @@ It takes only a few seconds of thought to explain most of your intent in code. I
 	
 	```
 
+	* Don’t Use a Comment When You Can Use a Function or a Variable
+	```
+	// Actions //////////////////////////////////
+	```
+	
+	* Closing Brace Comments
+	```
+	} //**while**
+	System.out.println("wordCount = " + wordCount);
+	System.out.println("lineCount = " + lineCount);
+	System.out.println("charCount = " + charCount);
+	} // **try**
+	catch (IOException e) {
+	System.err.println("Error:" + e.getMessage());
+	} //**catch**
+	```
+	
+	
+	* Attributions and Bylines
+	```
+	/* Added by Rick */ use git history
+	```
+	
+	* Commented-Out Code
+	
+	* HTML Comments
 
+	```
+	/**
+	* Task to run fit tests.
+	* This task runs fitnesse tests and publishes the results.
+	* <p/>
+	* <pre>
+	* Usage:
+	* &lt;taskdef name=&quot;execute-fitnesse-tests&quot;
+	* classname=&quot;fitnesse.ant.ExecuteFitnesseTestsTask&quot;
+	* classpathref=&quot;classpath&quot; /&gt;
+	* OR
+	* &lt;taskdef classpathref=&quot;classpath&quot;
+	* resource=&quot;tasks.properties&quot; /&gt;
+	* <p/>
+	* &lt;execute-fitnesse-tests
+	* suitepage=&quot;FitNesse.SuiteAcceptanceTests&quot;
+	* fitnesseport=&quot;8082&quot;
+	* resultsdir=&quot;${results.dir}&quot;
+	* resultshtmlpage=&quot;fit-results.html&quot;
+	* classpathref=&quot;classpath&quot; /&gt;
+	* </pre>
+	*/
+	```
+
+
+	* Nonlocal Information
+
+	```
+	/**
+	* Port on which fitnesse would run. Defaults to <b>8082</b>.
+	*
+	* @param fitnessePort
+	*/
+	public void setFitnessePort(int fitnessePort)
+	{
+	this.fitnessePort = fitnessePort;
+	}
+	```
+
+	* Too Much Information
+	
+	Don’t put interesting historical discussions or irrelevant descriptions of details into your
+	comments.
+
+	* Inobvious Connection
+
+	The purpose of a comment is to explain code that does not explain itself. It is a pity
+	when a comment needs its own explanation.
+
+	* Function Headers
+	Short functions don’t need much description. A well-chosen name for a small function that
+	does one thing is usually better than a comment header.
 
 	
