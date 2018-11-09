@@ -221,6 +221,16 @@ It takes only a few seconds of thought to explain most of your intent in code. I
 	protected AnnualDateRule() {
 	}
 	```
+	
+	* Scary Noise
+	
+	```
+	/** The name. */
+	private String name;
+	/** The version. */
+	private String version;
+	
+	```
 
 
 
