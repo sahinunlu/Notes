@@ -73,10 +73,11 @@
 	* Triads
 	
 	* Argument Objects
-		```
-		Circle makeCircle(double x, double y, double radius);
-		Circle makeCircle(Point center, double radius);
-		```
+		
+	```Java
+	Circle makeCircle(double x, double y, double radius);
+	Circle makeCircle(Point center, double radius);
+	```
 
 		Reducing the number of arguments by creating objects out of them may seem like
 cheating, but it’s not. When groups of variables are passed together, the way x and
@@ -103,7 +104,7 @@ own.
 15. The Error.java Dependency Magnet
 	Returning error codes usually implies that there is some class or enum in which all the error codes are defined.
 
-	```
+	```Java
 	 public enum Error {
 		OK,
 		INVALID,
@@ -128,7 +129,7 @@ own.
 
 There are certainly times when code makes a poor vehicle for explanation. Unfortunately, many programmers have taken this to mean that code is seldom, if ever, a good means for explanation. This is patently false. Which would you rather see? This:
 
-```
+```Java
 // Check to see if the employee is eligible for full benefits
 if ((employee.flags & HOURLY_FLAG) && (employee.age > 65))
 Or this?
@@ -143,7 +144,7 @@ It takes only a few seconds of thought to explain most of your intent in code. I
 	* Legal Comments (copyright..)
 	* Informative Comments
 
-	```
+	```Java
 		// Returns an instance of the Responder being tested.
 		protected abstract Responder responderInstance();
 
@@ -156,7 +157,7 @@ It takes only a few seconds of thought to explain most of your intent in code. I
 
 	* Warning of Consequences
 
-	```
+	```Java
 	// Don't run unless you
 	// have some time to kill.
 	public void _testWithReallyBigFile()
@@ -190,7 +191,7 @@ It takes only a few seconds of thought to explain most of your intent in code. I
 
 	* Journal Comments
 
-	```
+	```Java
 	* Changes (from 11-Oct-2001)
 	* --------------------------
 	* 11-Oct-2001 : Re-organised the class and moved it to new package
@@ -224,7 +225,7 @@ It takes only a few seconds of thought to explain most of your intent in code. I
 	
 	* Scary Noise
 	
-	```
+	```Java
 	/** The name. */
 	private String name;
 	/** The version. */
@@ -238,7 +239,7 @@ It takes only a few seconds of thought to explain most of your intent in code. I
 	```
 	
 	* Closing Brace Comments
-	```
+	```Java
 	} //**while**
 	System.out.println("wordCount = " + wordCount);
 	System.out.println("lineCount = " + lineCount);
@@ -249,9 +250,8 @@ It takes only a few seconds of thought to explain most of your intent in code. I
 	} //**catch**
 	```
 	
-	
 	* Attributions and Bylines
-	```
+	```Java
 	/* Added by Rick */ use git history
 	```
 	
@@ -259,7 +259,7 @@ It takes only a few seconds of thought to explain most of your intent in code. I
 	
 	* HTML Comments
 
-	```
+	```Java
 	/**
 	* Task to run fit tests.
 	* This task runs fitnesse tests and publishes the results.
@@ -286,7 +286,7 @@ It takes only a few seconds of thought to explain most of your intent in code. I
 
 	* Nonlocal Information
 
-	```
+	```Java
 	/**
 	* Port on which fitnesse would run. Defaults to <b>8082</b>.
 	*
