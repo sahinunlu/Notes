@@ -293,7 +293,7 @@ It takes only a few seconds of thought to explain most of your intent in code. I
 	*/
 	public void setFitnessePort(int fitnessePort)
 	{
-	this.fitnessePort = fitnessePort;
+		this.fitnessePort = fitnessePort;
 	}
 	```
 
@@ -308,7 +308,8 @@ It takes only a few seconds of thought to explain most of your intent in code. I
 	when a comment needs its own explanation.
 
 	* Function Headers
+
 	Short functions don’t need much description. A well-chosen name for a small function that
 	does one thing is usually better than a comment header.
 
-	
+	:smile:
