@@ -1,4 +1,4 @@
-### Clean Code
+## Clean Code
 
 **Naming**
 
@@ -27,8 +27,7 @@
 	* Methods should haver verb or verb phrase..
 
 11. Don't Be Cute
-	![alt text](dont_be_cute.PNG "don't be cute")
-
+	
 12. Pick One Word Per Concept
 
 13. Dont Pun
