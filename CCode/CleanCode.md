@@ -312,4 +312,27 @@ It takes only a few seconds of thought to explain most of your intent in code. I
 	Short functions don’t need much description. A well-chosen name for a small function that
 	does one thing is usually better than a comment header.
 
-	:smile:
+	
+	**Formating**
+
+	1.Vertical Formatting
+
+	Small files are usually easier to understand than large files are.
+
+	* The Newspaper Metaphor
+
+	The topmost parts of the source file should provide the high-level concepts and algorithms. Detail should increase as we move downward, until at the end we find the lowest level functions and details in the source file.
+
+	* Vertical Openness Between Concepts
+
+	* Vertical Density
+
+	Concepts that are closely related should be kept vertically close to each other
+
+	Variable Declarations. Variables should be declared as close to their usage as possible. Control variables for loops should usually be declared within the loop statement
+
+	
+
+
+
+
