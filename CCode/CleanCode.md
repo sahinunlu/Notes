@@ -331,8 +331,22 @@ It takes only a few seconds of thought to explain most of your intent in code. I
 
 	Variable Declarations. Variables should be declared as close to their usage as possible. Control variables for loops should usually be declared within the loop statement
 
-	
+	* Vertical Distance
 
+	Concepts that are closely related should be kept vertically close to each other 
+
+	**Variable Declarations**. Variables should be declared as close to their usage as possible.
+
+	**Instance variables**, on the other hand, should be declared at the top of the class. 
+	This should not increase the vertical distance of these variables, because in a well-designed class, they are used by many, if not all, of the methods of the class.
+
+	The important thing is for the instance variables to be declared in one well-known place. Everybody should know where to go to see the declarations.
+
+	**Dependent Functions**. If one function calls another, they should be vertically close,
+	and the caller should be above the callee, if at all possible.
+
+	**Conceptual Affinity**. Certain bits of code want to be near other bits. They have a certain
+	conceptual affinity. The stronger that affinity, the less vertical distance there should be between them.	
 
 
 
