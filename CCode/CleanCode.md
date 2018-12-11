@@ -348,5 +348,18 @@ It takes only a few seconds of thought to explain most of your intent in code. I
 	**Conceptual Affinity**. Certain bits of code want to be near other bits. They have a certain
 	conceptual affinity. The stronger that affinity, the less vertical distance there should be between them.	
 
+	**Vertical Ordering** In general we want function call dependencies to point in the downward direction. That is, a function that is called should be below a function that does the calling.2 This creates a nice flow down the source code module from high level to low level.
 
+	1.Horizontal Formatting
 
+	How wide should a line? 120
+
+	* Horizontal Openness and Density
+
+	Surround the assignment operators with white space to accentuate them
+
+	Do not put spaces between the function names and the opening parenthesis.
+
+	* Horizontal Alignment
+
+	
