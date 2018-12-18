@@ -233,6 +233,22 @@ It takes only a few seconds of thought to explain most of your intent in code. I
 	```
 
 	* Don’t Use a Comment When You Can Use a Function or a Variable
+
+	```
+	// does the module from the global list <mod> depend on the
+	// subsystem we are part of?
+	if (smodule.getDependSubsystems().contains(subSysMod.getSubSystem()))
+	```
+	or
+
+	```	
+	ArrayList moduleDependees = smodule.getDependSubsystems();
+	String ourSubSystem = subSysMod.getSubSystem();
+	if (moduleDependees.contains(ourSubSystem))
+	```
+
+	* Position Markers	
+	
 	```
 	// Actions //////////////////////////////////
 	```
@@ -313,7 +329,7 @@ It takes only a few seconds of thought to explain most of your intent in code. I
 	does one thing is usually better than a comment header.
 
 	
-	**Formating**
+**Formating**
 
 	1.Vertical Formatting
 
@@ -363,3 +379,82 @@ It takes only a few seconds of thought to explain most of your intent in code. I
 	* Horizontal Alignment
 
 	
+
+
+**Objects and Data Structures**
+
+1. Data abstraction
+
+2. Data/Object Anti-Symmetry
+
+3. The Law of Demeter
+
+		Module should not know about the innards of the objects it manipulates
+
+
+4. Train wreck
+
+5. Hybrids
+
+6. Hiding Structure
+
+7. Data Transfer Objects
+
+8. Active Record
+
+
+**Error Handling**
+
+1. Use Exceptions Rather Than Return Codes
+
+2. Write Your Try-Catch-Finally Statement First
+
+3. Use Unchecked Exceptions
+	 
+	 The price of checked exceptions is an Open/Closed Principle violation.If you throw a checked exception from a method in your code and the catch is three levels
+above, you must declare that exception in the signature of each method between you and
+the catch. This means that a change at a low level of the software can force signature
+changes on many higher levels. The changed modules must be rebuilt and redeployed,
+even though nothing they care about changed.
+
+4. Provide Context with Exceptions
+
+	Mention the operation that failed and the type of failure.
+
+5. Define Exception Classes in Terms of a Caller’s Needs
+
+6. Define the Normal Flow
+	
+	SPECIAL CASE PATTERN 
+
+
+7. Don’t Return Null
+
+	When we return null, we are essentially creating work for ourselves and foisting
+problems upon our callers. 
+
+8. Don’t Pass Null
+
+
+**Boundaries**
+
+
+1. Using Third-Party Code
+ 
+ 	If you use a boundary interface like Map, keep it inside the class, or close family
+of classes, where it is used. Avoid returning it from, or accepting it as an argument to,
+public APIs.
+
+2. Exploring and Learning Boundaries
+
+	write learning tests.
+
+3. Using Code That Does Not Yet Exist
+
+	interfaces
+
+We manage third-party boundaries by having very few places in the code that refer to
+them. We may wrap them as we did with Map, or we may use an ADAPTER to convert from
+our perfect interface to the provided interface. Either way our code speaks to us better,
+promotes internally consistent usage across the boundary, and has fewer maintenance
+points when the third-party code changes.
