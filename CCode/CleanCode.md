@@ -458,3 +458,55 @@ them. We may wrap them as we did with Map, or we may use an ADAPTER to convert f
 our perfect interface to the provided interface. Either way our code speaks to us better,
 promotes internally consistent usage across the boundary, and has fewer maintenance
 points when the third-party code changes.
+
+**Unit Test**
+
+1. Keeping Tests Clean 
+
+Dirty tests is equivalent to, if not worse
+than, having no tests
+
+The moral of the story is simple: Test code is just as important as production code. It
+is not a second-class citizen. It requires thought, design, and care. It must be kept as clean
+as production code.
+
+
+
+2. Tests Enable the -ilities
+
+It is unit tests that keep our code flexible, maintainable, and reusable.
+
+3. Clean Tests
+
+What makes a clean test? Three things. Readability, readability, and readability. Readability is perhaps even more important in unit tests than it is in production code.
+
+BUILD-OPERATE-CHECK2 pattern
+
+4. Domain-Specific Testing Language
+
+5. A Dual Standard
+
+6. One Assert per Test
+
+7. Single Concept per Test
+
+8. F.I.R.S.T
+
+ 	1- Fast: Tests should be fast.
+
+	2- Independent Tests should not depend on each other.
+
+	3- Repeatable Tests should be repeatable in any environment.
+
+	4- Self-Validating The tests should have a boolean output. 
+
+	5- Timely The tests need to be written in a timely fashion
+
+
+**Classes**	
+
+1. Classes Should Be Small!
+	
+	Count responsibilities
+
+
